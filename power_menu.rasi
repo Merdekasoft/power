@@ -1,8 +1,8 @@
 configuration {
     modi:                "drun";
-    font:                "YOUR FONT CHOICE HERE 12";
+    font:                "Sans 12";
     show-icons:          true;
-    icon-theme:          "YOUR ICON THEME HERE";
+    icon-theme:          "Yaru";
     display-drun:        "";
     drun-display-format: "{name}";
     sidebar-mode:        false;
@@ -11,19 +11,20 @@ configuration {
 @theme "/dev/null"
 
 * {
-    bg:                  #4a90e2;  /* Solid blue */
-    fg:                  #ffffff; /* White text color */
-    accent:              #2e6da4; /* Darker blue accent */
-    button:              #336699; /* Blue button color */
-    border:              #4a90e2; /* Match the background color for borders */
-    element-bg:          #4a90e2; /* Match the background color for elements */
+    bg:                  #2c3e50;  /* Dark blue-gray background */
+    fg:                  #ecf0f1;  /* Light gray text color */
+    accent:              #3498db;  /* Bright blue accent */
+    button:              #2980b9;  /* Slightly darker blue for buttons */
+    border:              #34495e;  /* Subtle border color */
+    element-bg:          #2c3e50;  /* Match the background color for elements */
 }
 
 window {
     border-radius:      8px;
     width:              50%;
     padding:            32px;
-    background-color:   @bg; /* Match the overall background */
+    background-color:   @bg;
+    border:             1px solid @border; /* Subtle border for the window */
 }
 
 prompt {
@@ -35,10 +36,10 @@ prompt {
 
 entry {
     placeholder:        "Search";
-    background-color:   @bg;
+    background-color:   #34495e; /* Slightly lighter background for entry */
     foreground-color:   @fg;
     text-color:         @fg;
-    placeholder-color:  @fg;
+    placeholder-color:  #bdc3c7; /* Lighter gray placeholder color */
     expand:             false;
     padding:            0% 0% 0% 0%;
 }
@@ -75,6 +76,7 @@ element {
     orientation:        vertical;
     padding:            2% 0% 2% 0%;
     background-color:   @element-bg;
+    border-radius:      4px; /* Slightly rounded corners for elements */
 }
 
 element-icon {
@@ -92,6 +94,6 @@ element-text {
 }
 
 element selected {
-    background-color:   #9b59b6; /* Purple color for selected element */
-    border-radius:      6px;
+    background-color:   #3498db; /* Blue color for selected element */
+    border-radius:      4px;
 }
