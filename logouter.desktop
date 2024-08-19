@@ -7,7 +7,7 @@ Type=Application
 Version=1.0
 
 # The name of the application
-Name=logout
+Name=Exit
 
 # A comment which can/will be used as a tooltip
 Comment=convenience app for rofi menu to logout of the current session
@@ -16,10 +16,10 @@ Comment=convenience app for rofi menu to logout of the current session
 #Path=/opt/jmemorise
 
 # The executable of the application, possibly with arguments.
-Exec=loginctl terminate-session "\\${XDG_SESSION_ID-}"
+Exec=i3-msg exit
 
 # The name of the icon that will be used to display this entry
-Icon=system-logout
+Icon=system-log-out
 
 # Describes whether this application needs to be run in a terminal or not
 Terminal=true

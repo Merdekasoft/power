@@ -7,7 +7,7 @@ Type=Application
 Version=1.0
 
 # The name of the application
-Name=reboot
+Name=Restart
 
 # A comment which can/will be used as a tooltip
 Comment=convenience app for rofi menu to reboot the system
