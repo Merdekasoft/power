@@ -11,10 +11,10 @@ configuration {
 @theme "/dev/null"
 
 * {
-	bg:				#41577faa;
-	fg:				#d3d5e8;
-	accent:				#687363;
-	button:				#29394d;
+	bg:				#4a90e2aa;  /* Warna biru semi-transparan */
+	fg:				#ffffff;    /* Warna teks putih */
+	accent:				#2e6da4;   /* Aksen biru yang lebih gelap */
+	button:				#336699;   /* Warna tombol biru */
 
 	background-color:		@bg;
 	text-color:			@fg;
@@ -95,4 +95,4 @@ element-text, element-icon {
 element selected {
     	background-color:               @button;
     	border-radius:                  6px;
-} 
+}
