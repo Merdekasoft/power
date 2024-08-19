@@ -11,43 +11,43 @@ configuration {
 @theme "/dev/null"
 
 * {
-    bg:                  #4a90e2aa;  /* Semi-transparent blue */
-    fg:                  #ffffff;    /* White text color */
-    accent:              #2e6da4;    /* Darker blue accent */
-    button:              #336699;    /* Blue button color */
-
-    background-color:    @bg;
-    text-color:          @fg;
+    bg:                  #4a90e2;  /* Solid blue */
+    fg:                  #ffffff; /* White text color */
+    accent:              #2e6da4; /* Darker blue accent */
+    button:              #336699; /* Blue button color */
+    border:              #4a90e2; /* Match the background color for borders */
+    element-bg:          #4a90e2; /* Match the background color for elements */
 }
 
 window {
     border-radius:      8px;
     width:              50%;
     padding:            32px;
+    background-color:   @bg; /* Match the overall background */
 }
 
 prompt {
-    background-color:   #00000000;
-    foreground-color:   #00000000;
+    background-color:   @bg;
+    foreground-color:   @fg;
     enabled:            false;
     padding:            0.5% 32px 0% -0.5%;
 }
 
 entry {
     placeholder:        "Search";
-    background-color:   #00000000;
-    foreground-color:   #00000000;
-    text-color:         #00000000;
-    placeholder-color:  #00000000;
+    background-color:   @bg;
+    foreground-color:   @fg;
+    text-color:         @fg;
+    placeholder-color:  @fg;
     expand:             false;
     padding:            0% 0% 0% 0%;
 }
 
 inputbar {
     children:           [ prompt, entry ];
-    background-color:   #00000000;
-    foreground-color:   #00000000;
-    text-color:         #00000000;
+    background-color:   @bg;
+    foreground-color:   @fg;
+    text-color:         @fg;
     expand:             false;
     margin:             0%;
 }
@@ -60,6 +60,7 @@ listview {
     layout:             vertical;
     border-radius:      8px;
     margin:             0 0 32 0;
+    background-color:   @bg;
 }
 
 mainbox {
@@ -67,11 +68,13 @@ mainbox {
     spacing:            2%;
     padding:            1 1 1 1;
     border-radius:      8px;
+    background-color:   @bg;
 }
 
 element {
     orientation:        vertical;
     padding:            2% 0% 2% 0%;
+    background-color:   @element-bg;
 }
 
 element-icon {
@@ -85,11 +88,7 @@ element-text {
     vertical-align:     0.5;
     margin:             0.5% 0.5% -0.5% 0.5%;
     position:           center;
-}
-
-element-text, element-icon {
-    background-color:   inherit;
-    text-color:         inherit;
+    text-color:         @fg;
 }
 
 element selected {
