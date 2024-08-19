@@ -93,6 +93,6 @@ element-text, element-icon {
 }
 
 element selected {
-    background-color:   #2e6da4; /* Dark blue color for selected element */
+    background-color:   #9b59b6; /* Purple color for selected element */
     border-radius:      6px;
 }
