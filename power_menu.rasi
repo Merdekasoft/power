@@ -11,10 +11,10 @@ configuration {
 @theme "/dev/null"
 
 * {
-    bg: #4a90e2aa;  /* Warna biru semi-transparan */
-    fg: #ffffff;    /* Warna teks putih */
-    accent: #2e6da4;   /* Aksen biru yang lebih gelap */
-    button: #336699;   /* Warna tombol biru */
+    bg: #4a90e2aa;
+    fg: #ffffff;
+    accent: #2e6da4;
+    button: #336699;
 
     background-color: @bg;
     text-color: @fg;
