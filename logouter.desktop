@@ -7,7 +7,7 @@ Type=Application
 Version=1.0
 
 # The name of the application
-Name=Exit
+Name=Logout
 
 # A comment which can/will be used as a tooltip
 Comment=convenience app for rofi menu to logout of the current session
